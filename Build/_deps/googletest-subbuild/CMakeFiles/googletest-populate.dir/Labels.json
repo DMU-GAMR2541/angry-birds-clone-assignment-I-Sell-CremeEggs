@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/googletest-populate"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/7d071bf3ec99fc238dfd4c2cd65970cb/googletest-populate.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/e7aa70dcafb85d246559ee9cbb5c953a/googletest-populate-complete.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-build.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-configure.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-download.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-install.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-patch.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-test.rule"
+		},
+		{
+			"file" : "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-subbuild/CMakeFiles/a41e5d4a978619fc369af82d851d0769/googletest-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest-populate"
+		],
+		"name" : "googletest-populate"
+	}
+}

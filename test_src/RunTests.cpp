@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 #include "Enemy.h"
+#include "GameObject.h"
 
 /// <summary>
 ///Taken from the GoogleTest primer. 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="src/box2d.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="664c5dc3-04b2-3f17-ad4b-b65b5376c831">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="extern/glad/glad.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a19ea2ba-9d46-37f4-8bb9-2d32aba2a2b0">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="extern/glfw/glfw.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="304b49eb-5ce7-38c7-bb2f-d36630a25787">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="extern/imgui/imgui.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c11a466a-522c-3cb9-a91c-1dc497fe319c">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="extern/sajson/sajson.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d3bc0100-f06a-3260-94c6-c1790acc2a62">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="testbed/testbed.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4182e544-ba33-3a61-91c3-4ce779caf62a" DefaultStartup="true">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="src/box2d.vcxproj"/>
+		<BuildDependency Project="extern/glad/glad.vcxproj"/>
+		<BuildDependency Project="extern/glfw/glfw.vcxproj"/>
+		<BuildDependency Project="extern/imgui/imgui.vcxproj"/>
+		<BuildDependency Project="extern/sajson/sajson.vcxproj"/>
+	</Project>
+	<Project Path="unit-test/unit_test.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d9c9cc91-96ba-30c4-aef1-05d561855550">
+		<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="src/box2d.vcxproj"/>
+	</Project>
+	<Folder Name="/CMake/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="bef1f27a-dc88-344a-9ccf-d77bda157ec2">
+			<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="src/box2d.vcxproj"/>
+			<BuildDependency Project="extern/glad/glad.vcxproj"/>
+			<BuildDependency Project="extern/glfw/glfw.vcxproj"/>
+			<BuildDependency Project="extern/imgui/imgui.vcxproj"/>
+			<BuildDependency Project="extern/sajson/sajson.vcxproj"/>
+			<BuildDependency Project="testbed/testbed.vcxproj"/>
+			<BuildDependency Project="unit-test/unit_test.vcxproj"/>
+		</Project>
+		<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a717784e-c5fe-3b0f-8314-8256ffbacc8e">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="PACKAGE.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="85136305-31b9-35e2-bba7-6d1372568b46">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="../../ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="../../ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="5f272c2f-4dc2-32b1-b3ae-3d4e701817b4"/>
+	</Folder>
+</Solution>

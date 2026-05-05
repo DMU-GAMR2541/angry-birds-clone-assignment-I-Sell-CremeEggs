@@ -1,8 +1,9 @@
-cmake_minimum_required(VERSION 3.28) 
+cmake_minimum_required(VERSION 3.28...4.3.2) 
 project(Annoyed_Flocks) 
 
 # Standards and Directories
-set(CMAKE_CXX_STANDARD 20) 
+# remember to change the C++ version back to 20 for upload
+set(CMAKE_CXX_STANDARD 23) 
 set(CMAKE_CXX_STANDARD_REQUIRED ON) 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin) 
 
