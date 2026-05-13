@@ -1,42 +1,23 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
+#include <iostream>
 class GameObject
 {
-private:
+protected:
 	sf::Texture texture;
 	sf::Sprite sprite;
-	b2BodyDef bodyDef;
-	b2Vec2 position;
-protected:
 	const float scale = 30.0f;
 	const float PI = 3.1415927f;
 public:
 	GameObject() = default;
 
-	~GameObject() = default;
+	virtual ~GameObject() = default;
 
-	GameObject(b2BodyDef bodyDef, b2Vec2 position)
-	{
-		this->bodyDef = bodyDef;
-		this->position = position;
-	}
+	virtual void SetSprite(std::string textureLocation) = 0;
 
-	void SetSprite(std::string textureLocation)
-	{
-		if (!texture.loadFromFile(textureLocation))
-		{
-			
-		}
-		sprite.setTexture(texture);
-	}
+	virtual void Update() = 0;
 
-	virtual void Render(b2World world)
-	{
-		bodyDef.position.Set(position.x, position.y);
-		b2Body* body = world.CreateBody(&bodyDef);
+	virtual void Render(sf::RenderWindow& window) = 0;
 
-		sprite.setPosition(body->GetPosition().x * scale, body->GetPosition().y * scale);
-		sprite.setRotation(body->GetAngle() * (180.0f / PI));
-	}
 };

@@ -5,5 +5,7 @@ class StaticObject : GameObject
 private:
 
 public:
-	StaticObject(GameObject) {}
+	StaticObject() = default;
+
+	~StaticObject() = default;
 };

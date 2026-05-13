@@ -412,12 +412,22 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\DynamicObject.cpp" />
+    <ClCompile Include="..\src\Pig.cpp" />
+    <ClCompile Include="..\src\StaticObject.cpp" />
     <ClCompile Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\src\main.cpp" />
+    <ClInclude Include="..\include\BirdProfile.h" />
+    <ClInclude Include="..\include\BirdTypes.h" />
     <ClInclude Include="..\include\DynamicObject.h" />
+    <ClInclude Include="..\include\PigProfile.h" />
+    <ClInclude Include="..\include\PigTypes.h" />
     <ClInclude Include="..\include\GameObject.h" />
+    <ClInclude Include="..\include\Pig.h" />
     <ClInclude Include="..\include\StaticObject.h" />
+    <ClInclude Include="..\include\StructureProfile.h" />
+    <ClInclude Include="..\include\StructureTypes.h" />
     <ClInclude Include="Bird.h" />
-    <ClInclude Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Enemy.h" />
+    <ClInclude Include="..\include\.h" />
     <ClInclude Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Slingshot.h" />
   </ItemGroup>
   <ItemGroup />

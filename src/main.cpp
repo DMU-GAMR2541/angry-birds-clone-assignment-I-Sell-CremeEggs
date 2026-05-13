@@ -1,12 +1,64 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
+#include <Pig.h>
 
 int main() {
     // --- 1. WINDOW SETUP ---
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
 
+    b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
+    b2World world(b2_gravity);
+
+    b2BodyDef b2_groundBodyDef;
+    b2_groundBodyDef.position.Set(400.0f / 30.0f, 590.0f / 30.0f);
+    b2Body* b2_groundBody = world.CreateBody(&b2_groundBodyDef);
+
+    b2PolygonShape b2_groundBox;
+    b2_groundBox.SetAsBox(400.0f / 30.0f, 10.0f / 30.0f);
+    b2_groundBody->CreateFixture(&b2_groundBox, 0.0f);
+
+    sf::RectangleShape sf_groundVisual(sf::Vector2f(800.0f, 20.0f));
+    sf_groundVisual.setOrigin(400.0f, 10.0f);
+    sf_groundVisual.setFillColor(sf::Color(34, 139, 34));
+
+    std::vector<std::unique_ptr<Pig>> pigs;
+
+    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(5.0f, 5.0f), PigType::SmallPig));
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+            {
+                window.close();
+            }
+        }
+
+        world.Step(1.0f / 60.0f, 8, 3);
+
+        sf_groundVisual.setPosition(b2_groundBody->GetPosition().x * 30.0f, b2_groundBody->GetPosition().y * 30.0f);
+
+        for (auto& pig : pigs)
+        {
+            pig->Update();
+        }
+
+        window.clear(sf::Color::Cyan);
+
+        window.draw(sf_groundVisual);
+
+        for (auto& pig : pigs)
+        {
+            pig->Render(window);
+        }
+        window.display();
+    }
+    /*
     //Box2D works in meters. SFML works in pixels.
     const float SCALE = 30.0f;
 
@@ -138,4 +190,5 @@ int main() {
     }
 
     return 0;
+    */
 }

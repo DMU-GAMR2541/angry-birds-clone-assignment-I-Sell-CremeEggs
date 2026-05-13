@@ -1,22 +1,20 @@
 #pragma once
 #include "GameObject.h"
-class DynamicObject : GameObject
+class DynamicObject : public GameObject
 {
-private:
-	sf::Vector2f velocity;
+protected:
+	b2BodyDef bodyDef;
+	b2Body* body = nullptr;
 public:
-	DynamicObject() = default;
+	DynamicObject()
+	{
+
+	}
 
 	~DynamicObject() = default;
 
-	DynamicObject(GameObject, sf::Vector2f velocity)
-	{
-		this->velocity = velocity;
-	}
-
-	void Render(b2World world) override
-	{
-		
-	}
-
+	void virtual CreateObject(b2World& world, b2Vec2 position){}
+	void SetSprite(std::string textureLocation) override;
+	void Update() override;
+	void Render(sf::RenderWindow& window) override;
 };
