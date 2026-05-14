@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\CMakeFiles\4fa4e2a79df0651b6bebd2df94f15a47\INSTALL_force.rule">
+    <CustomBuild Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\CMakeFiles\20bd7b8a3ad91862211142fe80f47926\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{95D7F36F-28D7-3C97-AA46-FB720798D67D}</UniqueIdentifier>
+      <UniqueIdentifier>{BB89F7FD-FE73-30D7-B2BB-2F98900AAC3A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

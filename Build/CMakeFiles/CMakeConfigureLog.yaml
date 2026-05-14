@@ -8,6 +8,10 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Windows - 10.0.26200 - AMD64
+...
+
+---
+events:
   -
     kind: "find-v1"
     backtrace:
@@ -35,6 +39,7 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -42,9 +47,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "message-v1"
     backtrace:
@@ -61,9 +70,9 @@ events:
       The output was:
       0
       MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-      Build started 24/04/2026 16:09:02.
+      Build started 14/05/2026 03:15:36.
       
-      Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -76,7 +85,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -84,13 +93,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.40
+      Time Elapsed 00:00:01.42
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -98,7 +107,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/4.3.2/CompilerIdC/CompilerIdC.exe
+        D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/4.3.2/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "find-v1"
@@ -123,6 +132,7 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -130,14 +140,19 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -145,9 +160,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "find-v1"
     backtrace:
@@ -171,6 +190,7 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -178,13 +198,20 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
       - "C:/Windows/System32/lld-link.com"
       - "C:/Windows/System32/lld-link.exe"
       - "C:/Windows/System32/lld-link"
@@ -206,6 +233,12 @@ events:
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lld-link.com"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lld-link.exe"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lld-link"
@@ -215,9 +248,16 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lld-link.com"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lld-link.exe"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lld-link"
+      - "C:/Users/dutto/.dotnet/tools/lld-link.com"
+      - "C:/Users/dutto/.dotnet/tools/lld-link.exe"
+      - "C:/Users/dutto/.dotnet/tools/lld-link"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -225,9 +265,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "find-v1"
     backtrace:
@@ -249,6 +293,7 @@ events:
       - "link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -256,14 +301,19 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -271,9 +321,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "find-v1"
     backtrace:
@@ -295,6 +349,7 @@ events:
       - "mt"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -302,13 +357,20 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.exe"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
       - "C:/Windows/System32/mt.com"
       - "C:/Windows/System32/mt.exe"
       - "C:/Windows/System32/mt"
@@ -330,6 +392,12 @@ events:
       - "C:/Program Files/CMake/bin/mt.com"
       - "C:/Program Files/CMake/bin/mt.exe"
       - "C:/Program Files/CMake/bin/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/mt.com"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/mt.exe"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/mt"
@@ -339,9 +407,16 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/mt.com"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/mt.exe"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/mt"
+      - "C:/Users/dutto/AppData/Local/Python/bin/mt.com"
+      - "C:/Users/dutto/AppData/Local/Python/bin/mt.exe"
+      - "C:/Users/dutto/AppData/Local/Python/bin/mt"
+      - "C:/Users/dutto/.dotnet/tools/mt.com"
+      - "C:/Users/dutto/.dotnet/tools/mt.exe"
+      - "C:/Users/dutto/.dotnet/tools/mt"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -349,9 +424,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "find-v1"
     backtrace:
@@ -373,6 +452,7 @@ events:
       - "lib"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -380,14 +460,19 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.com"
     found: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -395,9 +480,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "find-v1"
     backtrace:
@@ -425,6 +514,7 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -432,9 +522,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "message-v1"
     backtrace:
@@ -451,9 +545,9 @@ events:
       The output was:
       0
       MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-      Build started 24/04/2026 16:09:03.
+      Build started 14/05/2026 03:15:38.
       
-      Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
@@ -466,7 +560,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -474,13 +568,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.40
+      Time Elapsed 00:00:01.18
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -488,7 +582,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe
+        D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "find-v1"
@@ -513,6 +607,7 @@ events:
       - "lld-link"
     candidate_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -520,13 +615,20 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
     searched_directories:
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
       - "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
       - "C:/Windows/System32/lld-link.com"
       - "C:/Windows/System32/lld-link.exe"
       - "C:/Windows/System32/lld-link"
@@ -548,6 +650,12 @@ events:
       - "C:/Program Files/CMake/bin/lld-link.com"
       - "C:/Program Files/CMake/bin/lld-link.exe"
       - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lld-link.com"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lld-link.exe"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lld-link"
@@ -557,9 +665,16 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lld-link.com"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lld-link.exe"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lld-link"
+      - "C:/Users/dutto/.dotnet/tools/lld-link.com"
+      - "C:/Users/dutto/.dotnet/tools/lld-link.exe"
+      - "C:/Users/dutto/.dotnet/tools/lld-link"
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -567,9 +682,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
   -
     kind: "find-v1"
     backtrace:
@@ -593,6 +712,7 @@ events:
     names:
       - "rc"
     candidate_directories:
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -600,9 +720,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -616,6 +740,9 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/sbin/"
       - "C:/Program Files (x86)/Annoyed_Flocks/"
     searched_directories:
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
       - "C:/Windows/System32/rc.com"
       - "C:/Windows/System32/rc.exe"
       - "C:/Windows/System32/rc"
@@ -637,6 +764,12 @@ events:
       - "C:/Program Files/CMake/bin/rc.com"
       - "C:/Program Files/CMake/bin/rc.exe"
       - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/rc.com"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/rc.exe"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/rc"
@@ -646,6 +779,12 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/rc.com"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/rc.exe"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Users/dutto/AppData/Local/Python/bin/rc.com"
+      - "C:/Users/dutto/AppData/Local/Python/bin/rc.exe"
+      - "C:/Users/dutto/AppData/Local/Python/bin/rc"
+      - "C:/Users/dutto/.dotnet/tools/rc.com"
+      - "C:/Users/dutto/.dotnet/tools/rc.exe"
+      - "C:/Users/dutto/.dotnet/tools/rc"
       - "C:/Program Files/bin/rc.com"
       - "C:/Program Files/bin/rc.exe"
       - "C:/Program Files/bin/rc"
@@ -685,6 +824,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -692,9 +832,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -710,8 +854,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-0lto36"
-      binary: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-0lto36"
+      source: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8u6udz"
+      binary: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8u6udz"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -721,39 +865,39 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-0lto36'
+        Change Dir: 'D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8u6udz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8dfad.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_61834.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 24/04/2026 16:09:04.
+        Build started 14/05/2026 03:15:40.
         
-        Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-0lto36\\cmTC_8dfad.vcxproj" on node 1 (default targets).
+        Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8u6udz\\cmTC_61834.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-0lto36\\Debug\\".
-          Creating directory "cmTC_8dfad.dir\\Debug\\cmTC_8dfad.tlog\\".
+          Creating directory "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8u6udz\\Debug\\".
+          Creating directory "cmTC_61834.dir\\Debug\\cmTC_61834.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_8dfad.dir\\Debug\\cmTC_8dfad.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_8dfad.dir\\Debug\\cmTC_8dfad.tlog\\unsuccessfulbuild".
+          Creating "cmTC_61834.dir\\Debug\\cmTC_61834.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_61834.dir\\Debug\\cmTC_61834.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_8dfad.dir\\Debug\\\\" /Fd"cmTC_8dfad.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_61834.dir\\Debug\\\\" /Fd"cmTC_61834.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_8dfad.dir\\Debug\\\\" /Fd"cmTC_8dfad.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_61834.dir\\Debug\\\\" /Fd"cmTC_61834.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-0lto36\\Debug\\cmTC_8dfad.exe" /INCREMENTAL /ILK:"cmTC_8dfad.dir\\Debug\\cmTC_8dfad.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-0lto36/Debug/cmTC_8dfad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-0lto36/Debug/cmTC_8dfad.lib" /MACHINE:X64 cmTC_8dfad.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_8dfad.vcxproj -> D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-0lto36\\Debug\\cmTC_8dfad.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8u6udz\\Debug\\cmTC_61834.exe" /INCREMENTAL /ILK:"cmTC_61834.dir\\Debug\\cmTC_61834.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8u6udz/Debug/cmTC_61834.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8u6udz/Debug/cmTC_61834.lib" /MACHINE:X64 cmTC_61834.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_61834.vcxproj -> D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8u6udz\\Debug\\cmTC_61834.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_8dfad.dir\\Debug\\cmTC_8dfad.tlog\\unsuccessfulbuild".
-          Touching "cmTC_8dfad.dir\\Debug\\cmTC_8dfad.tlog\\cmTC_8dfad.lastbuildstate".
-        Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-0lto36\\cmTC_8dfad.vcxproj" (default targets).
+          Deleting file "cmTC_61834.dir\\Debug\\cmTC_61834.tlog\\unsuccessfulbuild".
+          Touching "cmTC_61834.dir\\Debug\\cmTC_61834.tlog\\cmTC_61834.lastbuildstate".
+        Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8u6udz\\cmTC_61834.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.38
+        Time Elapsed 00:00:01.11
         
       exitCode: 0
   -
@@ -782,7 +926,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.50.35729.0
+      Microsoft (R) Incremental Linker Version 14.50.35730.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "try_compile-v1"
@@ -793,8 +937,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8abj3f"
-      binary: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8abj3f"
+      source: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-i3admz"
+      binary: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-i3admz"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od"
@@ -805,39 +949,39 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8abj3f'
+        Change Dir: 'D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-i3admz'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_dab11.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d784d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 24/04/2026 16:09:04.
+        Build started 14/05/2026 03:15:41.
         
-        Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8abj3f\\cmTC_dab11.vcxproj" on node 1 (default targets).
+        Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i3admz\\cmTC_d784d.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8abj3f\\Debug\\".
-          Creating directory "cmTC_dab11.dir\\Debug\\cmTC_dab11.tlog\\".
+          Creating directory "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i3admz\\Debug\\".
+          Creating directory "cmTC_d784d.dir\\Debug\\cmTC_d784d.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_dab11.dir\\Debug\\cmTC_dab11.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_dab11.dir\\Debug\\cmTC_dab11.tlog\\unsuccessfulbuild".
+          Creating "cmTC_d784d.dir\\Debug\\cmTC_d784d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_d784d.dir\\Debug\\cmTC_d784d.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_dab11.dir\\Debug\\\\" /Fd"cmTC_dab11.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_d784d.dir\\Debug\\\\" /Fd"cmTC_d784d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_dab11.dir\\Debug\\\\" /Fd"cmTC_dab11.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /Fo"cmTC_d784d.dir\\Debug\\\\" /Fd"cmTC_d784d.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8abj3f\\Debug\\cmTC_dab11.exe" /INCREMENTAL /ILK:"cmTC_dab11.dir\\Debug\\cmTC_dab11.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8abj3f/Debug/cmTC_dab11.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-8abj3f/Debug/cmTC_dab11.lib" /MACHINE:X64 cmTC_dab11.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_dab11.vcxproj -> D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8abj3f\\Debug\\cmTC_dab11.exe
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i3admz\\Debug\\cmTC_d784d.exe" /INCREMENTAL /ILK:"cmTC_d784d.dir\\Debug\\cmTC_d784d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-i3admz/Debug/cmTC_d784d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-i3admz/Debug/cmTC_d784d.lib" /MACHINE:X64 cmTC_d784d.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_d784d.vcxproj -> D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i3admz\\Debug\\cmTC_d784d.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_dab11.dir\\Debug\\cmTC_dab11.tlog\\unsuccessfulbuild".
-          Touching "cmTC_dab11.dir\\Debug\\cmTC_dab11.tlog\\cmTC_dab11.lastbuildstate".
-        Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-8abj3f\\cmTC_dab11.vcxproj" (default targets).
+          Deleting file "cmTC_d784d.dir\\Debug\\cmTC_d784d.tlog\\unsuccessfulbuild".
+          Touching "cmTC_d784d.dir\\Debug\\cmTC_d784d.tlog\\cmTC_d784d.lastbuildstate".
+        Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-i3admz\\cmTC_d784d.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:01.13
         
       exitCode: 0
   -
@@ -866,7 +1010,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
-      Microsoft (R) Incremental Linker Version 14.50.35729.0
+      Microsoft (R) Incremental Linker Version 14.50.35730.0
       Copyright (C) Microsoft Corporation.  All rights reserved.
   -
     kind: "find-v1"
@@ -5781,6 +5925,7 @@ events:
     found: "C:/Users/dutto/AppData/Local/Python/pythoncore-3.14-64/python.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -5788,9 +5933,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -5834,6 +5983,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -5841,9 +5991,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -5862,8 +6016,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-fi844p"
-      binary: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-fi844p"
+      source: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ldbjhx"
+      binary: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ldbjhx"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -5872,39 +6026,39 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-fi844p'
+        Change Dir: 'D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ldbjhx'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00f5b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b0597.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 24/04/2026 16:09:07.
+        Build started 14/05/2026 03:15:44.
         
-        Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\cmTC_00f5b.vcxproj" on node 1 (default targets).
+        Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\cmTC_b0597.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\Debug\\".
-          Creating directory "cmTC_00f5b.dir\\Debug\\cmTC_00f5b.tlog\\".
+          Creating directory "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\Debug\\".
+          Creating directory "cmTC_b0597.dir\\Debug\\cmTC_b0597.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_00f5b.dir\\Debug\\cmTC_00f5b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_00f5b.dir\\Debug\\cmTC_00f5b.tlog\\unsuccessfulbuild".
+          Creating "cmTC_b0597.dir\\Debug\\cmTC_b0597.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_b0597.dir\\Debug\\cmTC_b0597.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_00f5b.dir\\Debug\\\\" /Fd"cmTC_00f5b.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_b0597.dir\\Debug\\\\" /Fd"cmTC_b0597.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_00f5b.dir\\Debug\\\\" /Fd"cmTC_00f5b.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\src.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_b0597.dir\\Debug\\\\" /Fd"cmTC_b0597.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\src.c"
           src.c
-        D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\cmTC_00f5b.vcxproj]
-        Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\cmTC_00f5b.vcxproj" (default targets) -- FAILED.
+        D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\cmTC_b0597.vcxproj]
+        Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\cmTC_b0597.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\cmTC_00f5b.vcxproj" (default target) (1) ->
+        "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\cmTC_b0597.vcxproj" (default target) (1) ->
         (ClCompile target) -> 
-          D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-fi844p\\cmTC_00f5b.vcxproj]
+          D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\src.c(1,10): error C1083: Cannot open include file: 'pthread.h': No such file or directory [D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ldbjhx\\cmTC_b0597.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.23
+        Time Elapsed 00:00:01.09
         
       exitCode: 1
   -
@@ -5918,8 +6072,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-f122vm"
-      binary: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-f122vm"
+      source: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ruwtvd"
+      binary: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ruwtvd"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -5928,41 +6082,41 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-f122vm'
+        Change Dir: 'D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ruwtvd'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3cdff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_40eb2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 24/04/2026 16:09:08.
+        Build started 14/05/2026 03:15:46.
         
-        Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\cmTC_3cdff.vcxproj" on node 1 (default targets).
+        Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\cmTC_40eb2.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\Debug\\".
-          Creating directory "cmTC_3cdff.dir\\Debug\\cmTC_3cdff.tlog\\".
+          Creating directory "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\Debug\\".
+          Creating directory "cmTC_40eb2.dir\\Debug\\cmTC_40eb2.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_3cdff.dir\\Debug\\cmTC_3cdff.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_3cdff.dir\\Debug\\cmTC_3cdff.tlog\\unsuccessfulbuild".
+          Creating "cmTC_40eb2.dir\\Debug\\cmTC_40eb2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_40eb2.dir\\Debug\\cmTC_40eb2.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_3cdff.dir\\Debug\\\\" /Fd"cmTC_3cdff.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_40eb2.dir\\Debug\\\\" /Fd"cmTC_40eb2.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_3cdff.dir\\Debug\\\\" /Fd"cmTC_3cdff.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_40eb2.dir\\Debug\\\\" /Fd"cmTC_40eb2.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\Debug\\cmTC_3cdff.exe" /INCREMENTAL /ILK:"cmTC_3cdff.dir\\Debug\\cmTC_3cdff.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-f122vm/Debug/cmTC_3cdff.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-f122vm/Debug/cmTC_3cdff.lib" /MACHINE:X64 cmTC_3cdff.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\cmTC_3cdff.vcxproj]
-        Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\cmTC_3cdff.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\Debug\\cmTC_40eb2.exe" /INCREMENTAL /ILK:"cmTC_40eb2.dir\\Debug\\cmTC_40eb2.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ruwtvd/Debug/cmTC_40eb2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-ruwtvd/Debug/cmTC_40eb2.lib" /MACHINE:X64 cmTC_40eb2.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\cmTC_40eb2.vcxproj]
+        Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\cmTC_40eb2.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\cmTC_3cdff.vcxproj" (default target) (1) ->
+        "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\cmTC_40eb2.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-f122vm\\cmTC_3cdff.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-ruwtvd\\cmTC_40eb2.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.30
+        Time Elapsed 00:00:01.04
         
       exitCode: 1
   -
@@ -5976,8 +6130,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-pt3tre"
-      binary: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-pt3tre"
+      source: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-2lna2b"
+      binary: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-2lna2b"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
@@ -5986,41 +6140,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-pt3tre'
+        Change Dir: 'D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-2lna2b'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f3e6d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_08a12.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
         MSBuild version 18.5.4+cb4e32d21 for .NET Framework
-        Build started 24/04/2026 16:09:08.
+        Build started 14/05/2026 03:15:47.
         
-        Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\cmTC_f3e6d.vcxproj" on node 1 (default targets).
+        Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\cmTC_08a12.vcxproj" on node 1 (default targets).
         PrepareForBuild:
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\Debug\\".
-          Creating directory "cmTC_f3e6d.dir\\Debug\\cmTC_f3e6d.tlog\\".
+          Creating directory "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\Debug\\".
+          Creating directory "cmTC_08a12.dir\\Debug\\cmTC_08a12.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f3e6d.dir\\Debug\\cmTC_f3e6d.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_f3e6d.dir\\Debug\\cmTC_f3e6d.tlog\\unsuccessfulbuild".
+          Creating "cmTC_08a12.dir\\Debug\\cmTC_08a12.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_08a12.dir\\Debug\\cmTC_08a12.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f3e6d.dir\\Debug\\\\" /Fd"cmTC_f3e6d.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_08a12.dir\\Debug\\\\" /Fd"cmTC_08a12.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35730 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_f3e6d.dir\\Debug\\\\" /Fd"cmTC_f3e6d.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\CheckFunctionExists.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_08a12.dir\\Debug\\\\" /Fd"cmTC_08a12.dir\\Debug\\vc145.pdb" /external:W1 /TC /errorReport:queue "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\Debug\\cmTC_f3e6d.exe" /INCREMENTAL /ILK:"cmTC_f3e6d.dir\\Debug\\cmTC_f3e6d.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-pt3tre/Debug/cmTC_f3e6d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-pt3tre/Debug/cmTC_f3e6d.lib" /MACHINE:X64 cmTC_f3e6d.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\cmTC_f3e6d.vcxproj]
-        Done Building Project "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\cmTC_f3e6d.vcxproj" (default targets) -- FAILED.
+          C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\Debug\\cmTC_08a12.exe" /INCREMENTAL /ILK:"cmTC_08a12.dir\\Debug\\cmTC_08a12.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-2lna2b/Debug/cmTC_08a12.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/CMakeFiles/CMakeScratch/TryCompile-2lna2b/Debug/cmTC_08a12.lib" /MACHINE:X64 cmTC_08a12.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\cmTC_08a12.vcxproj]
+        Done Building Project "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\cmTC_08a12.vcxproj" (default targets) -- FAILED.
         
         Build FAILED.
         
-        "D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\cmTC_f3e6d.vcxproj" (default target) (1) ->
+        "D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\cmTC_08a12.vcxproj" (default target) (1) ->
         (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Lab Work\\GAMR 2541 - Production C++\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-pt3tre\\cmTC_f3e6d.vcxproj]
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [D:\\Lab Work\\Lab Work Repo Boombaclat\\angry-birds-clone-assignment-I-Sell-CremeEggs\\Build\\CMakeFiles\\CMakeScratch\\TryCompile-2lna2b\\cmTC_08a12.vcxproj]
         
             0 Warning(s)
             1 Error(s)
         
-        Time Elapsed 00:00:00.42
+        Time Elapsed 00:00:01.03
         
       exitCode: 1
   -
@@ -6049,6 +6203,7 @@ events:
       - "git.cmd"
       - "git"
     candidate_directories:
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -6056,9 +6211,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/bin/"
       - "C:/Program Files/sbin/"
       - "C:/Program Files/"
@@ -6073,6 +6232,9 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/"
       - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/"
     searched_directories:
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd"
       - "C:/Windows/System32/git.cmd.com"
       - "C:/Windows/System32/git.cmd.exe"
       - "C:/Windows/System32/git.cmd"
@@ -6094,6 +6256,12 @@ events:
       - "C:/Program Files/CMake/bin/git.cmd.com"
       - "C:/Program Files/CMake/bin/git.cmd.exe"
       - "C:/Program Files/CMake/bin/git.cmd"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd"
+      - "C:/Program Files/Git/cmd/git.cmd.com"
+      - "C:/Program Files/Git/cmd/git.cmd.exe"
+      - "C:/Program Files/Git/cmd/git.cmd"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/git.cmd.com"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/git.cmd.exe"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/git.cmd"
@@ -6103,6 +6271,12 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/git.cmd.com"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/git.cmd.exe"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/git.cmd"
+      - "C:/Users/dutto/AppData/Local/Python/bin/git.cmd.com"
+      - "C:/Users/dutto/AppData/Local/Python/bin/git.cmd.exe"
+      - "C:/Users/dutto/AppData/Local/Python/bin/git.cmd"
+      - "C:/Users/dutto/.dotnet/tools/git.cmd.com"
+      - "C:/Users/dutto/.dotnet/tools/git.cmd.exe"
+      - "C:/Users/dutto/.dotnet/tools/git.cmd"
       - "C:/Program Files/bin/git.cmd.com"
       - "C:/Program Files/bin/git.cmd.exe"
       - "C:/Program Files/bin/git.cmd"
@@ -6142,6 +6316,9 @@ events:
       - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.com"
       - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.exe"
       - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git"
       - "C:/Windows/System32/git.com"
       - "C:/Windows/System32/git.exe"
       - "C:/Windows/System32/git"
@@ -6163,270 +6340,14 @@ events:
       - "C:/Program Files/CMake/bin/git.com"
       - "C:/Program Files/CMake/bin/git.exe"
       - "C:/Program Files/CMake/bin/git"
-      - "D:/Mods/Elden Ring Nightreign/me3/bin/git.com"
-      - "D:/Mods/Elden Ring Nightreign/me3/bin/git.exe"
-      - "D:/Mods/Elden Ring Nightreign/me3/bin/git"
-      - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/git.com"
-      - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/git.exe"
-      - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/git"
-      - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/git.com"
-      - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/git.exe"
-      - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/git"
-      - "C:/Program Files/bin/git.com"
-      - "C:/Program Files/bin/git.exe"
-      - "C:/Program Files/bin/git"
-      - "C:/Program Files/sbin/git.com"
-      - "C:/Program Files/sbin/git.exe"
-      - "C:/Program Files/sbin/git"
-      - "C:/Program Files/git.com"
-      - "C:/Program Files/git.exe"
-      - "C:/Program Files/git"
-      - "C:/Program Files (x86)/bin/git.com"
-      - "C:/Program Files (x86)/bin/git.exe"
-      - "C:/Program Files (x86)/bin/git"
-      - "C:/Program Files (x86)/sbin/git.com"
-      - "C:/Program Files (x86)/sbin/git.exe"
-      - "C:/Program Files (x86)/sbin/git"
-      - "C:/Program Files (x86)/git.com"
-      - "C:/Program Files (x86)/git.exe"
-      - "C:/Program Files (x86)/git"
-      - "C:/Program Files/CMake/bin/git.com"
-      - "C:/Program Files/CMake/bin/git.exe"
-      - "C:/Program Files/CMake/bin/git"
-      - "C:/Program Files/CMake/sbin/git.com"
-      - "C:/Program Files/CMake/sbin/git.exe"
-      - "C:/Program Files/CMake/sbin/git"
-      - "C:/Program Files/CMake/git.com"
-      - "C:/Program Files/CMake/git.exe"
-      - "C:/Program Files/CMake/git"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/git.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/git.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/git"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/git.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/git.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/git"
-      - "C:/Program Files (x86)/Annoyed_Flocks/git.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/git.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/git"
-      - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/git.com"
-      - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/git.exe"
-      - "C:/Users/dutto/AppData/Local/Atlassian/SourceTree/git_local/bin/git"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "C:\\WINDOWS\\system32"
-        - "C:\\WINDOWS"
-        - "C:\\WINDOWS\\System32\\Wbem"
-        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\WINDOWS\\System32\\OpenSSH\\"
-        - "C:\\Program Files\\dotnet\\"
-        - "C:\\Program Files\\CMake\\bin"
-        - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
-        - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "C:/Program Files"
-        - "C:/Program Files (x86)"
-        - "C:/Program Files/CMake"
-        - "C:/Program Files (x86)/Annoyed_Flocks"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindGit.cmake:122 (find_program)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/ExternalProject/shared_internal_commands.cmake:926 (find_package)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FetchContent.cmake:1703 (_ep_add_download_command)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FetchContent.cmake:1620 (__FetchContent_populateDirect)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FetchContent.cmake:2158:EVAL:2 (__FetchContent_doPopulation)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FetchContent.cmake:2158 (cmake_language)"
-      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FetchContent.cmake:2399 (__FetchContent_Populate)"
-      - "CMakeLists.txt:38 (FetchContent_MakeAvailable)"
-    mode: "program"
-    variable: "GIT_EXECUTABLE"
-    description: "Git command line client"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "git.cmd"
-      - "git"
-    candidate_directories:
-      - "C:/Program Files/bin/Git/cmd/"
-      - "C:/Program Files/bin/Git/bin/"
-      - "C:/Program Files/bin/"
-      - "C:/Program Files/sbin/Git/cmd/"
-      - "C:/Program Files/sbin/Git/bin/"
-      - "C:/Program Files/sbin/"
-      - "C:/Program Files/Git/cmd/"
-      - "C:/Program Files/Git/bin/"
-      - "C:/Program Files/"
-      - "C:/Program Files (x86)/bin/Git/cmd/"
-      - "C:/Program Files (x86)/bin/Git/bin/"
-      - "C:/Program Files (x86)/bin/"
-      - "C:/Program Files (x86)/sbin/Git/cmd/"
-      - "C:/Program Files (x86)/sbin/Git/bin/"
-      - "C:/Program Files (x86)/sbin/"
-      - "C:/Program Files (x86)/Git/cmd/"
-      - "C:/Program Files (x86)/Git/bin/"
-      - "C:/Program Files (x86)/"
-      - "C:/Program Files/CMake/bin/Git/cmd/"
-      - "C:/Program Files/CMake/bin/Git/bin/"
-      - "C:/Program Files/CMake/bin/"
-      - "C:/Program Files/CMake/sbin/Git/cmd/"
-      - "C:/Program Files/CMake/sbin/Git/bin/"
-      - "C:/Program Files/CMake/sbin/"
-      - "C:/Program Files/CMake/Git/cmd/"
-      - "C:/Program Files/CMake/Git/bin/"
-      - "C:/Program Files/CMake/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/cmd/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/bin/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/cmd/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/bin/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/cmd/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/bin/"
-      - "C:/Program Files (x86)/Annoyed_Flocks/"
-    searched_directories:
-      - "C:/Program Files/bin/Git/cmd/git.cmd.com"
-      - "C:/Program Files/bin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/bin/Git/cmd/git.cmd"
-      - "C:/Program Files/bin/Git/bin/git.cmd.com"
-      - "C:/Program Files/bin/Git/bin/git.cmd.exe"
-      - "C:/Program Files/bin/Git/bin/git.cmd"
-      - "C:/Program Files/bin/git.cmd.com"
-      - "C:/Program Files/bin/git.cmd.exe"
-      - "C:/Program Files/bin/git.cmd"
-      - "C:/Program Files/sbin/Git/cmd/git.cmd.com"
-      - "C:/Program Files/sbin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/sbin/Git/cmd/git.cmd"
-      - "C:/Program Files/sbin/Git/bin/git.cmd.com"
-      - "C:/Program Files/sbin/Git/bin/git.cmd.exe"
-      - "C:/Program Files/sbin/Git/bin/git.cmd"
-      - "C:/Program Files/sbin/git.cmd.com"
-      - "C:/Program Files/sbin/git.cmd.exe"
-      - "C:/Program Files/sbin/git.cmd"
-      - "C:/Program Files/Git/cmd/git.cmd.com"
-      - "C:/Program Files/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/Git/cmd/git.cmd"
-      - "C:/Program Files/Git/bin/git.cmd.com"
-      - "C:/Program Files/Git/bin/git.cmd.exe"
-      - "C:/Program Files/Git/bin/git.cmd"
-      - "C:/Program Files/git.cmd.com"
-      - "C:/Program Files/git.cmd.exe"
-      - "C:/Program Files/git.cmd"
-      - "C:/Program Files (x86)/bin/Git/cmd/git.cmd.com"
-      - "C:/Program Files (x86)/bin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files (x86)/bin/Git/cmd/git.cmd"
-      - "C:/Program Files (x86)/bin/Git/bin/git.cmd.com"
-      - "C:/Program Files (x86)/bin/Git/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/bin/Git/bin/git.cmd"
-      - "C:/Program Files (x86)/bin/git.cmd.com"
-      - "C:/Program Files (x86)/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/bin/git.cmd"
-      - "C:/Program Files (x86)/sbin/Git/cmd/git.cmd.com"
-      - "C:/Program Files (x86)/sbin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files (x86)/sbin/Git/cmd/git.cmd"
-      - "C:/Program Files (x86)/sbin/Git/bin/git.cmd.com"
-      - "C:/Program Files (x86)/sbin/Git/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/sbin/Git/bin/git.cmd"
-      - "C:/Program Files (x86)/sbin/git.cmd.com"
-      - "C:/Program Files (x86)/sbin/git.cmd.exe"
-      - "C:/Program Files (x86)/sbin/git.cmd"
-      - "C:/Program Files (x86)/Git/cmd/git.cmd.com"
-      - "C:/Program Files (x86)/Git/cmd/git.cmd.exe"
-      - "C:/Program Files (x86)/Git/cmd/git.cmd"
-      - "C:/Program Files (x86)/Git/bin/git.cmd.com"
-      - "C:/Program Files (x86)/Git/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/Git/bin/git.cmd"
-      - "C:/Program Files (x86)/git.cmd.com"
-      - "C:/Program Files (x86)/git.cmd.exe"
-      - "C:/Program Files (x86)/git.cmd"
-      - "C:/Program Files/CMake/bin/Git/cmd/git.cmd.com"
-      - "C:/Program Files/CMake/bin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/CMake/bin/Git/cmd/git.cmd"
-      - "C:/Program Files/CMake/bin/Git/bin/git.cmd.com"
-      - "C:/Program Files/CMake/bin/Git/bin/git.cmd.exe"
-      - "C:/Program Files/CMake/bin/Git/bin/git.cmd"
-      - "C:/Program Files/CMake/bin/git.cmd.com"
-      - "C:/Program Files/CMake/bin/git.cmd.exe"
-      - "C:/Program Files/CMake/bin/git.cmd"
-      - "C:/Program Files/CMake/sbin/Git/cmd/git.cmd.com"
-      - "C:/Program Files/CMake/sbin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/CMake/sbin/Git/cmd/git.cmd"
-      - "C:/Program Files/CMake/sbin/Git/bin/git.cmd.com"
-      - "C:/Program Files/CMake/sbin/Git/bin/git.cmd.exe"
-      - "C:/Program Files/CMake/sbin/Git/bin/git.cmd"
-      - "C:/Program Files/CMake/sbin/git.cmd.com"
-      - "C:/Program Files/CMake/sbin/git.cmd.exe"
-      - "C:/Program Files/CMake/sbin/git.cmd"
-      - "C:/Program Files/CMake/Git/cmd/git.cmd.com"
-      - "C:/Program Files/CMake/Git/cmd/git.cmd.exe"
-      - "C:/Program Files/CMake/Git/cmd/git.cmd"
-      - "C:/Program Files/CMake/Git/bin/git.cmd.com"
-      - "C:/Program Files/CMake/Git/bin/git.cmd.exe"
-      - "C:/Program Files/CMake/Git/bin/git.cmd"
-      - "C:/Program Files/CMake/git.cmd.com"
-      - "C:/Program Files/CMake/git.cmd.exe"
-      - "C:/Program Files/CMake/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/cmd/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/cmd/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/bin/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/Git/bin/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/bin/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/cmd/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/cmd/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/cmd/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/bin/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/Git/bin/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/sbin/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/cmd/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/cmd/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/cmd/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/bin/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/bin/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/Git/bin/git.cmd"
-      - "C:/Program Files (x86)/Annoyed_Flocks/git.cmd.com"
-      - "C:/Program Files (x86)/Annoyed_Flocks/git.cmd.exe"
-      - "C:/Program Files (x86)/Annoyed_Flocks/git.cmd"
-      - "C:/Program Files/bin/Git/cmd/git.com"
-      - "C:/Program Files/bin/Git/cmd/git.exe"
-      - "C:/Program Files/bin/Git/cmd/git"
-      - "C:/Program Files/bin/Git/bin/git.com"
-      - "C:/Program Files/bin/Git/bin/git.exe"
-      - "C:/Program Files/bin/Git/bin/git"
-      - "C:/Program Files/bin/git.com"
-      - "C:/Program Files/bin/git.exe"
-      - "C:/Program Files/bin/git"
-      - "C:/Program Files/sbin/Git/cmd/git.com"
-      - "C:/Program Files/sbin/Git/cmd/git.exe"
-      - "C:/Program Files/sbin/Git/cmd/git"
-      - "C:/Program Files/sbin/Git/bin/git.com"
-      - "C:/Program Files/sbin/Git/bin/git.exe"
-      - "C:/Program Files/sbin/Git/bin/git"
-      - "C:/Program Files/sbin/git.com"
-      - "C:/Program Files/sbin/git.exe"
-      - "C:/Program Files/sbin/git"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git"
       - "C:/Program Files/Git/cmd/git.com"
     found: "C:/Program Files/Git/cmd/git.exe"
     search_context:
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -6434,9 +6355,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -6463,14 +6388,18 @@ events:
     names:
       - "ft2build.h"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/freetype2/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/freetype2/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/include/freetype2/"
       - "C:/Windows/System32/include/"
       - "C:/Windows/System32/freetype2/"
@@ -6499,6 +6428,14 @@ events:
       - "C:/Program Files/CMake/bin/include/"
       - "C:/Program Files/CMake/bin/freetype2/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/freetype2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/freetype2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/include/freetype2/"
+      - "C:/Program Files/Git/cmd/include/"
+      - "C:/Program Files/Git/cmd/freetype2/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/freetype2/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/freetype2/"
@@ -6511,6 +6448,14 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/include/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/freetype2/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/freetype2/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/freetype2/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/include/freetype2/"
+      - "C:/Users/dutto/.dotnet/tools/include/"
+      - "C:/Users/dutto/.dotnet/tools/freetype2/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/include/include/freetype2/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/freetype2/"
@@ -6564,14 +6509,15 @@ events:
       - "/REGISTRY-NOTFOUND/freetype2/"
       - "/REGISTRY-NOTFOUND/"
     searched_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/ft2build.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/ft2build.h"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/ft2build.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/ft2build.h"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
     search_context:
       CMAKE_INCLUDE_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -6579,9 +6525,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -6609,14 +6559,18 @@ events:
       - "freetype/config/ftheader.h"
       - "config/ftheader.h"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype2/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/freetype2/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/freetype2/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/include/freetype2/"
       - "C:/Windows/System32/include/"
       - "C:/Windows/System32/freetype2/"
@@ -6645,6 +6599,14 @@ events:
       - "C:/Program Files/CMake/bin/include/"
       - "C:/Program Files/CMake/bin/freetype2/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/freetype2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/freetype2/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/include/freetype2/"
+      - "C:/Program Files/Git/cmd/include/"
+      - "C:/Program Files/Git/cmd/freetype2/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/freetype2/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/freetype2/"
@@ -6657,6 +6619,14 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/include/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/freetype2/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/freetype2/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/freetype2/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/include/freetype2/"
+      - "C:/Users/dutto/.dotnet/tools/include/"
+      - "C:/Users/dutto/.dotnet/tools/freetype2/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/include/include/freetype2/"
       - "C:/Program Files/include/include/"
       - "C:/Program Files/include/freetype2/"
@@ -6710,14 +6680,18 @@ events:
       - "/REGISTRY-NOTFOUND/freetype2/"
       - "/REGISTRY-NOTFOUND/"
     searched_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype2/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype2/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype2/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/include/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype2/freetype/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/freetype/config/ftheader.h"
       - "C:/Windows/System32/include/freetype2/freetype/config/ftheader.h"
       - "C:/Windows/System32/include/freetype/config/ftheader.h"
       - "C:/Windows/System32/freetype2/freetype/config/ftheader.h"
@@ -6746,6 +6720,14 @@ events:
       - "C:/Program Files/CMake/bin/include/freetype/config/ftheader.h"
       - "C:/Program Files/CMake/bin/freetype2/freetype/config/ftheader.h"
       - "C:/Program Files/CMake/bin/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/freetype/config/ftheader.h"
+      - "C:/Program Files/Git/cmd/include/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files/Git/cmd/include/freetype/config/ftheader.h"
+      - "C:/Program Files/Git/cmd/freetype2/freetype/config/ftheader.h"
+      - "C:/Program Files/Git/cmd/freetype/config/ftheader.h"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/freetype2/freetype/config/ftheader.h"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/freetype/config/ftheader.h"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/freetype2/freetype/config/ftheader.h"
@@ -6758,6 +6740,14 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/include/freetype/config/ftheader.h"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/freetype2/freetype/config/ftheader.h"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/freetype/config/ftheader.h"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/freetype2/freetype/config/ftheader.h"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/freetype/config/ftheader.h"
+      - "C:/Users/dutto/AppData/Local/Python/bin/freetype2/freetype/config/ftheader.h"
+      - "C:/Users/dutto/AppData/Local/Python/bin/freetype/config/ftheader.h"
+      - "C:/Users/dutto/.dotnet/tools/include/freetype2/freetype/config/ftheader.h"
+      - "C:/Users/dutto/.dotnet/tools/include/freetype/config/ftheader.h"
+      - "C:/Users/dutto/.dotnet/tools/freetype2/freetype/config/ftheader.h"
+      - "C:/Users/dutto/.dotnet/tools/freetype/config/ftheader.h"
       - "C:/Program Files/include/include/freetype2/freetype/config/ftheader.h"
       - "C:/Program Files/include/include/freetype/config/ftheader.h"
       - "C:/Program Files/include/freetype2/freetype/config/ftheader.h"
@@ -6810,14 +6800,15 @@ events:
       - "/REGISTRY-NOTFOUND/include/freetype/config/ftheader.h"
       - "/REGISTRY-NOTFOUND/freetype2/freetype/config/ftheader.h"
       - "/REGISTRY-NOTFOUND/freetype/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/config/ftheader.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/config/ftheader.h"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/freetype2/config/ftheader.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/config/ftheader.h"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2/"
     search_context:
       CMAKE_INCLUDE_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/freetype2"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -6825,9 +6816,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -6856,8 +6851,10 @@ events:
       - "libfreetype"
       - "freetype219"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/lib/"
       - "C:/Windows/System32/"
       - "C:/Windows/lib/"
@@ -6872,12 +6869,20 @@ events:
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/lib/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/lib/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/lib/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/lib/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/lib/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/lib/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/lib/"
@@ -6909,12 +6914,13 @@ events:
       - "/REGISTRY-NOTFOUND/lib/"
       - "/REGISTRY-NOTFOUND/"
     searched_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/freetype.lib"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/freetype.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -6922,9 +6928,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -6954,18 +6964,24 @@ events:
     names:
       - "al.h"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/AL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/OpenAL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/OpenAL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/include/AL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/include/OpenAL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/include/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/AL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/OpenAL/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/OpenAL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/OpenAL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/include/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/include/OpenAL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/include/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/OpenAL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/AL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/OpenAL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/include/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/AL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/OpenAL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/include/AL/"
       - "C:/Windows/System32/include/OpenAL/"
       - "C:/Windows/System32/include/"
@@ -7008,6 +7024,18 @@ events:
       - "C:/Program Files/CMake/bin/AL/"
       - "C:/Program Files/CMake/bin/OpenAL/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/AL/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/OpenAL/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/include/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/AL/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/OpenAL/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/include/AL/"
+      - "C:/Program Files/Git/cmd/include/OpenAL/"
+      - "C:/Program Files/Git/cmd/include/"
+      - "C:/Program Files/Git/cmd/AL/"
+      - "C:/Program Files/Git/cmd/OpenAL/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/AL/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/OpenAL/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/include/"
@@ -7026,6 +7054,18 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/AL/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/OpenAL/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/AL/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/OpenAL/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/include/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/AL/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/OpenAL/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/include/AL/"
+      - "C:/Users/dutto/.dotnet/tools/include/OpenAL/"
+      - "C:/Users/dutto/.dotnet/tools/include/"
+      - "C:/Users/dutto/.dotnet/tools/AL/"
+      - "C:/Users/dutto/.dotnet/tools/OpenAL/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/include/include/AL/"
       - "C:/Program Files/include/include/OpenAL/"
       - "C:/Program Files/include/include/"
@@ -7099,15 +7139,16 @@ events:
       - "/REGISTRY-NOTFOUND/OpenAL/"
       - "/REGISTRY-NOTFOUND/"
     searched_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/AL/al.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/OpenAL/al.h"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/al.h"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/AL/al.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/OpenAL/al.h"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/include/al.h"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
     search_context:
       CMAKE_INCLUDE_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -7115,9 +7156,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -7147,12 +7192,18 @@ events:
       - "OpenAL32"
       - "openal32"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libx32/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/libx32/"
       - "C:/Windows/System32/lib64/"
       - "C:/Windows/System32/lib/"
@@ -7195,6 +7246,18 @@ events:
       - "C:/Program Files/CMake/bin/libs64/"
       - "C:/Program Files/CMake/bin/libs/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libx32/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/libx32/"
+      - "C:/Program Files/Git/cmd/lib64/"
+      - "C:/Program Files/Git/cmd/lib/"
+      - "C:/Program Files/Git/cmd/libs64/"
+      - "C:/Program Files/Git/cmd/libs/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/libx32/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib64/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib/"
@@ -7213,6 +7276,18 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs64/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libx32/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/libx32/"
+      - "C:/Users/dutto/.dotnet/tools/lib64/"
+      - "C:/Users/dutto/.dotnet/tools/lib/"
+      - "C:/Users/dutto/.dotnet/tools/libs64/"
+      - "C:/Users/dutto/.dotnet/tools/libs/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/libx32/"
       - "C:/Program Files/lib/lib64/"
       - "C:/Program Files/lib/lib/"
@@ -7298,12 +7373,18 @@ events:
       - "/REGISTRY-NOTFOUND/libs/"
       - "/REGISTRY-NOTFOUND/"
     searched_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libx32/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/libx32/"
       - "C:/Windows/System32/lib64/"
       - "C:/Windows/System32/lib/"
@@ -7346,6 +7427,18 @@ events:
       - "C:/Program Files/CMake/bin/libs64/"
       - "C:/Program Files/CMake/bin/libs/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libx32/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/libx32/"
+      - "C:/Program Files/Git/cmd/lib64/"
+      - "C:/Program Files/Git/cmd/lib/"
+      - "C:/Program Files/Git/cmd/libs64/"
+      - "C:/Program Files/Git/cmd/libs/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/libx32/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib64/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib/"
@@ -7364,6 +7457,18 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs64/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libx32/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/libx32/"
+      - "C:/Users/dutto/.dotnet/tools/lib64/"
+      - "C:/Users/dutto/.dotnet/tools/lib/"
+      - "C:/Users/dutto/.dotnet/tools/libs64/"
+      - "C:/Users/dutto/.dotnet/tools/libs/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/libx32/"
       - "C:/Program Files/lib/lib64/"
       - "C:/Program Files/lib/lib/"
@@ -7448,12 +7553,18 @@ events:
       - "/REGISTRY-NOTFOUND/libs64/"
       - "/REGISTRY-NOTFOUND/libs/"
       - "/REGISTRY-NOTFOUND/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libx32/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/libx32/"
       - "C:/Windows/System32/lib64/"
       - "C:/Windows/System32/lib/"
@@ -7496,6 +7607,18 @@ events:
       - "C:/Program Files/CMake/bin/libs64/"
       - "C:/Program Files/CMake/bin/libs/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libx32/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/libx32/"
+      - "C:/Program Files/Git/cmd/lib64/"
+      - "C:/Program Files/Git/cmd/lib/"
+      - "C:/Program Files/Git/cmd/libs64/"
+      - "C:/Program Files/Git/cmd/libs/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/libx32/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib64/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib/"
@@ -7514,6 +7637,18 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs64/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libx32/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/libx32/"
+      - "C:/Users/dutto/.dotnet/tools/lib64/"
+      - "C:/Users/dutto/.dotnet/tools/lib/"
+      - "C:/Users/dutto/.dotnet/tools/libs64/"
+      - "C:/Users/dutto/.dotnet/tools/libs/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/libx32/"
       - "C:/Program Files/lib/lib64/"
       - "C:/Program Files/lib/lib/"
@@ -7598,12 +7733,18 @@ events:
       - "/REGISTRY-NOTFOUND/libs64/"
       - "/REGISTRY-NOTFOUND/libs/"
       - "/REGISTRY-NOTFOUND/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libx32/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/libs/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/libx32/"
       - "C:/Windows/System32/lib64/"
       - "C:/Windows/System32/lib/"
@@ -7646,6 +7787,18 @@ events:
       - "C:/Program Files/CMake/bin/libs64/"
       - "C:/Program Files/CMake/bin/libs/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libx32/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lib/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs64/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/libs/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/libx32/"
+      - "C:/Program Files/Git/cmd/lib64/"
+      - "C:/Program Files/Git/cmd/lib/"
+      - "C:/Program Files/Git/cmd/libs64/"
+      - "C:/Program Files/Git/cmd/libs/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/libx32/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib64/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/lib/"
@@ -7664,6 +7817,18 @@ events:
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs64/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/libs/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libx32/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/lib/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs64/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/libs/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/libx32/"
+      - "C:/Users/dutto/.dotnet/tools/lib64/"
+      - "C:/Users/dutto/.dotnet/tools/lib/"
+      - "C:/Users/dutto/.dotnet/tools/libs64/"
+      - "C:/Users/dutto/.dotnet/tools/libs/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/libx32/"
       - "C:/Program Files/lib/lib64/"
       - "C:/Program Files/lib/lib/"
@@ -7748,16 +7913,17 @@ events:
       - "/REGISTRY-NOTFOUND/libs64/"
       - "/REGISTRY-NOTFOUND/libs/"
       - "/REGISTRY-NOTFOUND/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/openal32.lib"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libx32/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/lib/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/libs/"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/openal32.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -7765,9 +7931,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -7798,8 +7968,9 @@ events:
     names:
       - "ogg/ogg.h"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -7807,9 +7978,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
@@ -7818,12 +7993,13 @@ events:
       - "C:/Program Files/CMake/"
       - "C:/Program Files (x86)/Annoyed_Flocks/include/"
       - "C:/Program Files (x86)/Annoyed_Flocks/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
     search_context:
       CMAKE_INCLUDE_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -7831,9 +8007,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -7860,8 +8040,9 @@ events:
     names:
       - "vorbis/vorbisfile.h"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -7869,9 +8050,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
@@ -7880,12 +8065,13 @@ events:
       - "C:/Program Files/CMake/"
       - "C:/Program Files (x86)/Annoyed_Flocks/include/"
       - "C:/Program Files (x86)/Annoyed_Flocks/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
     search_context:
       CMAKE_INCLUDE_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -7893,9 +8079,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -7922,7 +8112,8 @@ events:
     names:
       - "ogg"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -7930,9 +8121,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -7943,11 +8138,12 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/"
       - "C:/Program Files (x86)/Annoyed_Flocks/bin/"
       - "/bin/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/ogg.lib"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/ogg.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -7955,9 +8151,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -7988,7 +8188,8 @@ events:
     names:
       - "vorbis"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -7996,9 +8197,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -8009,11 +8214,12 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/"
       - "C:/Program Files (x86)/Annoyed_Flocks/bin/"
       - "/bin/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/vorbis.lib"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/vorbis.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -8021,9 +8227,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -8054,7 +8264,8 @@ events:
     names:
       - "vorbisfile"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -8062,9 +8273,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -8075,11 +8290,12 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/"
       - "C:/Program Files (x86)/Annoyed_Flocks/bin/"
       - "/bin/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/vorbisfile.lib"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/vorbisfile.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -8087,9 +8303,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -8120,7 +8340,8 @@ events:
     names:
       - "vorbisenc"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -8128,9 +8349,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -8141,11 +8366,12 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/"
       - "C:/Program Files (x86)/Annoyed_Flocks/bin/"
       - "/bin/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/vorbisenc.lib"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/vorbisenc.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -8153,9 +8379,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -8186,8 +8416,9 @@ events:
     names:
       - "FLAC/all.h"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -8195,9 +8426,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/include/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/include/"
@@ -8206,12 +8441,13 @@ events:
       - "C:/Program Files/CMake/"
       - "C:/Program Files (x86)/Annoyed_Flocks/include/"
       - "C:/Program Files (x86)/Annoyed_Flocks/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/"
     search_context:
       CMAKE_INCLUDE_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/headers/AL"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -8219,9 +8455,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
@@ -8248,7 +8488,8 @@ events:
     names:
       - "FLAC"
     candidate_directories:
-      - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -8256,9 +8497,13 @@ events:
       - "C:/Windows/System32/OpenSSH/"
       - "C:/Program Files/dotnet/"
       - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Git/cmd/"
       - "D:/Mods/Elden Ring Nightreign/me3/bin/"
       - "C:/Users/dutto/AppData/Local/Microsoft/WindowsApps/"
       - "C:/Users/dutto/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/dutto/AppData/Local/Python/bin/"
+      - "C:/Users/dutto/.dotnet/tools/"
       - "C:/Program Files/lib/"
       - "C:/Program Files/"
       - "C:/Program Files (x86)/lib/"
@@ -8269,11 +8514,12 @@ events:
       - "C:/Program Files (x86)/Annoyed_Flocks/"
       - "C:/Program Files (x86)/Annoyed_Flocks/bin/"
       - "/bin/"
-    found: "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/flac.lib"
+    found: "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64/flac.lib"
     search_context:
       CMAKE_LIBRARY_PATH:
-        - "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
+        - "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/extlibs/libs-msvc-universal/x64"
       ENV{PATH}:
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
         - "C:\\WINDOWS\\system32"
         - "C:\\WINDOWS"
         - "C:\\WINDOWS\\System32\\Wbem"
@@ -8281,9 +8527,13 @@ events:
         - "C:\\WINDOWS\\System32\\OpenSSH\\"
         - "C:\\Program Files\\dotnet\\"
         - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Git\\cmd"
         - "D:\\Mods\\Elden Ring Nightreign\\me3\\bin"
         - "C:\\Users\\dutto\\AppData\\Local\\Microsoft\\WindowsApps"
         - "C:\\Users\\dutto\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\dutto\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\dutto\\.dotnet\\tools"
       CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/Annoyed_Flocks"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"

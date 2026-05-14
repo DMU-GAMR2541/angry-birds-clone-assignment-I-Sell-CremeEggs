@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{17C20731-78F1-3EF9-8FCF-71F5D8914EF8}</ProjectGuid>
+    <ProjectGuid>{8EDD6A6A-C8BB-3D84-97E4-25FFC52E7C40}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-main.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-main-d</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-main.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-main</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-main.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-main</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-main.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-main</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -99,15 +99,15 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Debug\sfml-main-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Debug\sfml-main-s.pdb</ProgramDataBaseFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -117,7 +117,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -139,15 +139,15 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Release\sfml-main-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\Release\sfml-main-s.pdb</ProgramDataBaseFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -157,7 +157,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -179,15 +179,15 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\MinSizeRel\sfml-main-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\MinSizeRel\sfml-main-s.pdb</ProgramDataBaseFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -197,7 +197,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -218,15 +218,15 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\RelWithDebInfo\sfml-main-s.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\lib\RelWithDebInfo\sfml-main-s.pdb</ProgramDataBaseFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;SFML_STATIC;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\include;D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -235,11 +235,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src\SFML\Main\CMakeLists.txt">
+    <CustomBuild Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src\SFML\Main\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -248,11 +248,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -261,11 +261,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -274,11 +274,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-src/src/SFML/Main/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/sfml-build/src/SFML/Main/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -287,12 +287,12 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\src\SFML\Main\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src\SFML\Main\MainWin32.cpp">
+    <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-src\src\SFML\Main\MainWin32.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -313,8 +313,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\ZERO_CHECK.vcxproj">
-      <Project>{5F272C2F-4DC2-32B1-B3AE-3D4E701817B4}</Project>
+    <ProjectReference Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\ZERO_CHECK.vcxproj">
+      <Project>{4FA74965-0BAC-3570-BDD6-99969972E412}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

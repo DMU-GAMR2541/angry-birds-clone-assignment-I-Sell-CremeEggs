@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A717784E-C5FE-3B0F-8314-8256FFBACC8E}</ProjectGuid>
+    <ProjectGuid>{C41E5CD3-69F6-30F3-893E-2251E250AF25}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -125,7 +125,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\CMakeFiles\00596b8220990f446931d5b74dcdfd8d\INSTALL_force.rule">
+    <CustomBuild Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\CMakeFiles\24e49ccb93e20dd46426e8aaee4f996e\INSTALL_force.rule">
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
@@ -138,7 +138,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
@@ -153,7 +153,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
@@ -168,7 +168,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
       <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
@@ -183,21 +183,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\ZERO_CHECK.vcxproj">
-      <Project>{5F272C2F-4DC2-32B1-B3AE-3D4E701817B4}</Project>
+    <ProjectReference Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\ZERO_CHECK.vcxproj">
+      <Project>{4FA74965-0BAC-3570-BDD6-99969972E412}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\ALL_BUILD.vcxproj">
-      <Project>{BEF1F27A-DC88-344A-9CCF-D77BDA157EC2}</Project>
+    <ProjectReference Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\sfml-build\ALL_BUILD.vcxproj">
+      <Project>{1577FE00-2E03-3B56-B3A9-62039F88DAE7}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

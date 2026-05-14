@@ -1,4 +1,4 @@
-# Install script for directory: D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/unit-test
+# Install script for directory: D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/unit-test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,6 +35,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/unit-test/install_local_manifest.txt"
+  file(WRITE "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/unit-test/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

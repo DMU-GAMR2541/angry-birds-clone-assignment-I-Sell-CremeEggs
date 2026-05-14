@@ -5,8 +5,8 @@ cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
 # Make file names absolute:
 #
-get_filename_component(filename "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-tmp/03597a01ee50ed33e9dfd640b249b4be3799d395.zip" ABSOLUTE)
-get_filename_component(directory "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-src" ABSOLUTE)
+get_filename_component(filename "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-tmp/03597a01ee50ed33e9dfd640b249b4be3799d395.zip" ABSOLUTE)
+get_filename_component(directory "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/googletest-src" ABSOLUTE)
 
 message(VERBOSE "extracting...
      src='${filename}'

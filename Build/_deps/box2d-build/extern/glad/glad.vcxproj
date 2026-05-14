@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A19EA2BA-9D46-37F4-8BB9-2D32ABA2A2B0}</ProjectGuid>
+    <ProjectGuid>{755DB43C-75E8-376E-8C4C-44F9448C1A40}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glad.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glad.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glad.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glad.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glad</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -103,10 +103,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -142,10 +142,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -155,7 +155,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -181,10 +181,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -194,7 +194,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <BufferSecurityCheck></BufferSecurityCheck>
@@ -219,10 +219,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -231,11 +231,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\CMakeLists.txt">
+    <CustomBuild Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -244,11 +244,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -257,11 +257,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -270,11 +270,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-src/extern/glad/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/GAMR 2541 - Production C++/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs" "-BD:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build" --check-stamp-file "D:/Lab Work/Lab Work Repo Boombaclat/angry-birds-clone-assignment-I-Sell-CremeEggs/Build/_deps/box2d-build/extern/glad/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -283,19 +283,19 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-build\extern\glad\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\src\gl.c" />
-    <ClInclude Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include\glad\gl.h" />
-    <ClInclude Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include\KHR\khrplatform.h" />
+    <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\src\gl.c" />
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include\glad\gl.h" />
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\_deps\box2d-src\extern\glad\include\KHR\khrplatform.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\ZERO_CHECK.vcxproj">
-      <Project>{5F272C2F-4DC2-32B1-B3AE-3D4E701817B4}</Project>
+    <ProjectReference Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\Build\ZERO_CHECK.vcxproj">
+      <Project>{4FA74965-0BAC-3570-BDD6-99969972E412}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

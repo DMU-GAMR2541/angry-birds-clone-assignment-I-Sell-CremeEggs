@@ -1,84 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\src\DynamicObject.cpp">
+    <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\DynamicObject.cpp">
       <Filter>Source Files\Base Objects</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\StaticObject.cpp">
+    <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\main.cpp">
       <Filter>Source Files\Base Objects</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\src\main.cpp">
+    <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\StaticObject.cpp">
       <Filter>Source Files\Base Objects</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\Pig.cpp">
+    <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\Pig.cpp">
+      <Filter>Source Files\Dynamic Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Bird.cpp">
       <Filter>Source Files\Dynamic Objects</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\GameObject.h">
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\GameObject.h">
       <Filter>Header Files\Base Objects</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\DynamicObject.h">
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\DynamicObject.h">
       <Filter>Header Files\Base Objects</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\StaticObject.h">
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\StaticObject.h">
       <Filter>Header Files\Base Objects</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\.h">
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Bird.h">
       <Filter>Header Files\Dynamic Objects</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Slingshot.h">
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Pig.h">
       <Filter>Header Files\Dynamic Objects</Filter>
     </ClInclude>
-    <ClInclude Include="Bird.h">
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Slingshot.h">
       <Filter>Header Files\Dynamic Objects</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\Pig.h">
-      <Filter>Header Files\Dynamic Objects</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\BirdProfile.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\BirdTypes.h">
-      <Filter>Header Files\Object Types and Profiles</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\BirdTypes.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\PigTypes.h">
-      <Filter>Header Files\Object Types and Profiles</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\PigProfile.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\StructureTypes.h">
-      <Filter>Header Files\Object Types and Profiles</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\PigType.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\PigProfile.h">
-      <Filter>Header Files\Object Types and Profiles</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\PigTypes.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\BirdProfile.h">
-      <Filter>Header Files\Object Types and Profiles</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\StructureProfile.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\StructureProfile.h">
-      <Filter>Header Files\Object Types and Profiles</Filter>
+    <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\StructureTypes.h">
+      <Filter>Header Files\Profiles and Types</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Lab Work\GAMR 2541 - Production C++\angry-birds-clone-assignment-I-Sell-CremeEggs\CMakeLists.txt" />
+    <CustomBuild Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{30B00510-790F-3248-A1E7-B89CCD50E7CA}</UniqueIdentifier>
+      <UniqueIdentifier>{3B8DD06D-D72F-3C41-AB24-F5D4EB0B6D64}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{CF9B917B-81BD-35FF-94C6-85C53CAE038D}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Base Objects">
-      <UniqueIdentifier>{50de8439-ea4a-482f-b848-5f9819928830}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Dynamic Objects">
-      <UniqueIdentifier>{0abbab78-ea55-42a9-bef6-41daf74c9d06}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Object Types and Profiles">
-      <UniqueIdentifier>{2b2c5e12-bd55-43e9-8874-06dcdd3178b3}</UniqueIdentifier>
+      <UniqueIdentifier>{EF74C8BA-483D-3699-9629-C84CA68AC548}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Base Objects">
-      <UniqueIdentifier>{c68e2d3b-cfb4-4301-92b6-c0eff4fa2e96}</UniqueIdentifier>
+      <UniqueIdentifier>{6da86fbe-c92d-4c3b-9013-22d2ad29e82e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Dynamic Objects">
-      <UniqueIdentifier>{f4971347-1f40-480c-af5a-589bb98da78f}</UniqueIdentifier>
+      <UniqueIdentifier>{8a0aea0b-ed9a-48dd-a679-98ce13c193fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Base Objects">
+      <UniqueIdentifier>{230ba8c0-d05a-4b5c-b080-d1946520962c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Dynamic Objects">
+      <UniqueIdentifier>{c153e417-7af7-4dc3-8e38-be55a59d41ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Profiles and Types">
+      <UniqueIdentifier>{0b94aaa4-ac0f-4795-8bf5-a53c3b87a63d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

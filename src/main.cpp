@@ -2,6 +2,7 @@
 #include <box2d/box2d.h>
 #include <iostream>
 #include <Pig.h>
+#include <Bird.h>
 
 int main() {
     // --- 1. WINDOW SETUP ---
@@ -24,8 +25,13 @@ int main() {
     sf_groundVisual.setFillColor(sf::Color(34, 139, 34));
 
     std::vector<std::unique_ptr<Pig>> pigs;
+    std::vector<std::unique_ptr<Bird>> birds;
 
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(5.0f, 5.0f), PigType::SmallPig));
+    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(14.0f, 6.0f), PigType::MediumPig));
+    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(10.0f, 8.0f), PigType::LargePig));
+
+    birds.push_back(std::make_unique<Bird>(world, b2Vec2(4.5f, 10.0f), BirdType::Red));
 
     while (window.isOpen())
     {
@@ -47,6 +53,10 @@ int main() {
         {
             pig->Update();
         }
+        for (auto& bird : birds)
+        {
+            bird->Update();
+        }
 
         window.clear(sf::Color::Cyan);
 
@@ -55,6 +65,10 @@ int main() {
         for (auto& pig : pigs)
         {
             pig->Render(window);
+        }
+        for (auto& bird : birds)
+        {
+            bird->Render(window);
         }
         window.display();
     }

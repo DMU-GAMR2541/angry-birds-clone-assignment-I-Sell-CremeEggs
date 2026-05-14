@@ -30,7 +30,7 @@ static std::map<PigType, PigProfile> pigProfiles =
 			100,
 			1.2f,
 			1.5f,
-			"Assets/mediumPig.png"
+			"../assets/ang_birds/mediumPig.png"
 		}
 	},
 
@@ -40,7 +40,7 @@ static std::map<PigType, PigProfile> pigProfiles =
 			150,
 			1.6f,
 			2.0f,
-			"Assets/largePig.png"
+			"../assets/ang_birds/largePig.png"
 		}
 	},
 };
