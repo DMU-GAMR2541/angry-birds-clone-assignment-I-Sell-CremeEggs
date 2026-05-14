@@ -3,8 +3,10 @@
 #include <iostream>
 #include <Pig.h>
 #include <Bird.h>
+#include <Structure.h>
 
 int main() {
+    int scale = 30.0f;
     // --- 1. WINDOW SETUP ---
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
@@ -13,11 +15,11 @@ int main() {
     b2World world(b2_gravity);
 
     b2BodyDef b2_groundBodyDef;
-    b2_groundBodyDef.position.Set(400.0f / 30.0f, 590.0f / 30.0f);
+    b2_groundBodyDef.position.Set(400.0f / scale, 590.0f / scale);
     b2Body* b2_groundBody = world.CreateBody(&b2_groundBodyDef);
 
     b2PolygonShape b2_groundBox;
-    b2_groundBox.SetAsBox(400.0f / 30.0f, 10.0f / 30.0f);
+    b2_groundBox.SetAsBox(400.0f / scale, 10.0f / scale);
     b2_groundBody->CreateFixture(&b2_groundBox, 0.0f);
 
     sf::RectangleShape sf_groundVisual(sf::Vector2f(800.0f, 20.0f));
@@ -26,12 +28,20 @@ int main() {
 
     std::vector<std::unique_ptr<Pig>> pigs;
     std::vector<std::unique_ptr<Bird>> birds;
+    std::vector<std::unique_ptr<Structure>> structures;
 
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(5.0f, 5.0f), PigType::SmallPig));
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(14.0f, 6.0f), PigType::MediumPig));
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(10.0f, 8.0f), PigType::LargePig));
 
     birds.push_back(std::make_unique<Bird>(world, b2Vec2(4.5f, 10.0f), BirdType::Red));
+
+    structures.push_back(std::make_unique<Structure>(world, b2Vec2(600.0f/scale, 568.0f/scale), StructureType::WoodBlock));
+    structures.push_back(std::make_unique<Structure>(world, b2Vec2(650.0f/scale, 568.0f/scale), StructureType::StoneBlock));
+    //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::WoodPillar));
+    //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::WoodPillar));
+    //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::StonePillar));
+    //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::GlassPillar));
 
     while (window.isOpen())
     {
@@ -57,6 +67,10 @@ int main() {
         {
             bird->Update();
         }
+        for (auto& structure : structures)
+        {
+            structure->Update();
+        }
 
         window.clear(sf::Color::Cyan);
 
@@ -69,6 +83,10 @@ int main() {
         for (auto& bird : birds)
         {
             bird->Render(window);
+        }
+        for (auto& structure : structures)
+        {
+            structure->Render(window);
         }
         window.display();
     }

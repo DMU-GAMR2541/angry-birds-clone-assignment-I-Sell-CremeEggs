@@ -2,7 +2,10 @@
 
 enum class StructureType
 {
-	Wood,
-	Stone,
-	Glass
+	WoodPillar,
+	WoodBlock,
+	StonePillar,
+	StoneBlock,
+	GlassPillar,
+	GlassBlock
 };
