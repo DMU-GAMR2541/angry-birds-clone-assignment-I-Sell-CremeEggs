@@ -6,6 +6,7 @@
 
 struct StructureProfile
 {
+	int structID;
 	int health;
 	float height;
 	float width;
@@ -18,6 +19,7 @@ static std::map<StructureType, StructureProfile> structureProfiles =
 	{
 		StructureType::WoodPillar,
 		{
+			6,
 			50,
 			1.0f,
 			0.2f,
@@ -29,6 +31,7 @@ static std::map<StructureType, StructureProfile> structureProfiles =
 	{
 		StructureType::GlassPillar,
 		{
+			7,
 			25,
 			1.0f,
 			0.2f,
@@ -40,6 +43,7 @@ static std::map<StructureType, StructureProfile> structureProfiles =
 	{
 		StructureType::StonePillar,
 		{
+			8,
 			100,
 			1.0f,
 			0.2f,
@@ -51,6 +55,7 @@ static std::map<StructureType, StructureProfile> structureProfiles =
 	{
 		StructureType::WoodBlock,
 		{
+			9,
 			50,
 			0.8f,
 			0.8f,
@@ -62,6 +67,7 @@ static std::map<StructureType, StructureProfile> structureProfiles =
 	{
 		StructureType::GlassBlock,
 		{
+			10,
 			25,
 			0.8f,
 			0.8f,
@@ -73,6 +79,7 @@ static std::map<StructureType, StructureProfile> structureProfiles =
 	{
 		StructureType::StoneBlock,
 		{
+			11,
 			100,
 			0.8f,
 			0.8f,

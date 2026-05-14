@@ -1,10 +1,12 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
+#include <unordered_map>
 #include <Pig.h>
 #include <Bird.h>
 #include <Structure.h>
 #include <Slingshot.h>
+#include <ContactListener.h>
 
 int main() {
     float scale = 30.0f;
@@ -16,10 +18,16 @@ int main() {
 
     b2Vec2 b2_gravity(0.0f, 9.8f); // Earth-like gravity
     b2World world(b2_gravity);
+    std::unordered_map<uintptr_t, Pig*> pigLookup;
+    std::unordered_map<uintptr_t, Structure*> structureLookup;
+
+    ContactListener listener(&pigLookup, &structureLookup);
+    world.SetContactListener(&listener);
 
     b2BodyDef b2_groundBodyDef;
     b2_groundBodyDef.position.Set(400.0f / scale, 590.0f / scale);
     b2Body* b2_groundBody = world.CreateBody(&b2_groundBodyDef);
+    b2_groundBody->GetUserData().pointer = 1;
 
     b2PolygonShape b2_groundBox;
     b2_groundBox.SetAsBox(400.0f / scale, 10.0f / scale);
@@ -37,17 +45,21 @@ int main() {
     //Slingshot slingshot = Slingshot(world, b2Vec2(225.0f / scale, 500.0f / scale), b2Vec2(225.0f / scale, 450.0f / scale), 300.0f, 150.0f);
 
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(625.0f/scale, 500.0f/scale), PigType::SmallPig));
+    pigLookup[3] = pigs.back().get();
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(500.0f/scale, 560.0f/scale), PigType::MediumPig));
+    pigLookup[4] = pigs.back().get();
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(735.0f/scale, 550.0f/scale), PigType::LargePig));
+    pigLookup[5] = pigs.back().get();
 
     birds.push_back(std::make_unique<Bird>(world, b2Vec2(150.0f / scale, 560.0f / scale), BirdType::Red));
     birds.push_back(std::make_unique<Bird>(world, b2Vec2(100.0f / scale, 560.0f / scale), BirdType::Red));
     birds.push_back(std::make_unique<Bird>(world, b2Vec2(50.0f / scale, 560.0f / scale), BirdType::Red));
 
     structures.push_back(std::make_unique<Structure>(world, b2Vec2(600.0f/scale, 568.0f/scale), StructureType::WoodBlock));
+    structureLookup[9] = structures.back().get();
     structures.push_back(std::make_unique<Structure>(world, b2Vec2(650.0f/scale, 568.0f/scale), StructureType::StoneBlock));
-
-    slingshot = std::make_unique<Slingshot>(world, b2Vec2(225.0f / scale, 500.0f / scale), b2Vec2(225.0f / scale, 450.0f / scale), 300.0f, 150.0f);
+    structureLookup[11] = structures.back().get();
+    slingshot = std::make_unique<Slingshot>(world, b2Vec2(225.0f / scale, 480.0f / scale), b2Vec2(225.0f / scale, 425.0f / scale), 50.0f / scale, 100.0f / scale);
     //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::WoodPillar));
     //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::WoodPillar));
     //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::StonePillar));

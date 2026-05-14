@@ -9,4 +9,6 @@ private:
 	int health;
 public:
 	Pig(b2World& world, b2Vec2 position, PigType type);
+	void TakeDamage(float damage);
+	bool IsDead();
 };

@@ -10,6 +10,7 @@ Bird::Bird(b2World& world, b2Vec2 position, BirdType type)
 	bodyDef.position = position;
 
 	body = world.CreateBody(&bodyDef);
+	body->GetUserData().pointer = 100;
 
 	b2CircleShape shape;
 	shape.m_radius = profile.radius;

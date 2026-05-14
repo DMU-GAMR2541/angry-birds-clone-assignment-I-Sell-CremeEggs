@@ -11,6 +11,7 @@ Structure::Structure(b2World& world, b2Vec2 position, StructureType type)
 	bodyDef.position = position;
 
 	body = world.CreateBody(&bodyDef);
+	body->GetUserData().pointer = profile.structID;
 
 	b2PolygonShape shape;
 	shape.SetAsBox(profile.height, profile.width);
@@ -28,4 +29,13 @@ Structure::Structure(b2World& world, b2Vec2 position, StructureType type)
 	float desiredHeight = profile.height * scale * 2.0f;
 	float desiredWidth = profile.width * scale * 2.0f;
 	sprite.setScale(desiredHeight / textureSize.x, desiredWidth / textureSize.y);
+}
+
+void Structure::TakeDamage(float damage)
+{
+	health -= damage;
+	if (health <= 0)
+	{
+		
+	}
 }

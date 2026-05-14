@@ -6,6 +6,7 @@
 
 struct PigProfile
 {
+	int pigID;
 	int health;
 	float radius;
 	float density;
@@ -17,6 +18,7 @@ static std::map<PigType, PigProfile> pigProfiles =
 	{
 		PigType::SmallPig,
 		{
+			3,
 			50,
 			0.8f,
 			1.0f,
@@ -27,6 +29,7 @@ static std::map<PigType, PigProfile> pigProfiles =
 	{
 		PigType::MediumPig,
 		{
+			4,
 			100,
 			1.2f,
 			1.5f,
@@ -37,6 +40,7 @@ static std::map<PigType, PigProfile> pigProfiles =
 	{
 		PigType::LargePig,
 		{
+			5,
 			150,
 			1.6f,
 			2.0f,

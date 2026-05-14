@@ -419,6 +419,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\Pig.cpp" />
     <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\StaticObject.cpp" />
     <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\main.cpp" />
+    <ClInclude Include="..\include\BirdAbilities.h" />
+    <ClInclude Include="..\include\ContactListener.h" />
     <ClInclude Include="..\include\Structure.h" />
     <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\Bird.h" />
     <ClInclude Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\include\BirdProfile.h" />

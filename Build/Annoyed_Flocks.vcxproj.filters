@@ -66,6 +66,12 @@
     <ClInclude Include="..\include\Structure.h">
       <Filter>Header Files\Dynamic Objects</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\ContactListener.h">
+      <Filter>Header Files\Dynamic Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\BirdAbilities.h">
+      <Filter>Header Files\Dynamic Objects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\CMakeLists.txt" />

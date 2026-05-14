@@ -22,7 +22,7 @@ Slingshot::Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float 
 	body->CreateFixture(&fixture);
 	body->SetEnabled(false);
 
-	SetSprite("../assets/ang_birds/slingshot.png");
+	SetSprite("../assets/ang_birds/Slingshot.png");
 
 	sf::Vector2u textureSize = texture.getSize();
 	sprite.setOrigin(textureSize.x / 2.0f, textureSize.y / 2.0f);

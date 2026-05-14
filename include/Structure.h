@@ -9,4 +9,6 @@ private:
 	int health;
 public:
 	Structure(b2World& world, b2Vec2 position, StructureType type);
+	void TakeDamage(float damage);
+	bool IsDestroyed();
 };
