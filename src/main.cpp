@@ -77,17 +77,18 @@ int main() {
             }
         }
 
-        if (slingshot->IsBirdLoaded() == false && !birds.empty())
+        if (!slingshot->IsBirdLoaded())
         {
-            if (slingshot->IsBirdInFlight())
-            {
-
-            }
-            else
+            if (birdNum < birds.size())
             {
                 Bird* nextBird = birds[birdNum].get();
-                birdNum++;
-                slingshot->LoadBird(nextBird);
+
+                if (!nextBird->IsInFlight())
+                {
+                    listener.SetActiveBird(nextBird);
+                    slingshot->LoadBird(nextBird);
+                    birdNum++;
+                }
             }
         }
 
@@ -104,6 +105,11 @@ int main() {
             if (event.mouseButton.button == sf::Mouse::Left)
             {
                 slingshot->Release();
+                Bird* launchedBird = slingshot->GetLoadedBird();
+                if (launchedBird)
+                {
+                    launchedBird->SetInFlight(true);
+                }
             }
         }
 

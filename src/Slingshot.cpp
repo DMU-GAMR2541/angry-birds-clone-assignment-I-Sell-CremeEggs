@@ -31,21 +31,14 @@ Slingshot::Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float 
 	sprite.setScale(desiredHeight / textureSize.x, desiredWidth / textureSize.y);
 }
 
+Bird* Slingshot::GetLoadedBird()
+{
+		return loadedBird;
+}
+
 bool Slingshot::IsBirdLoaded()
 {
 	if (loadedBird != nullptr)
-	{
-		return true;
-	}
-	else
-	{
-		return false;
-	}
-}
-
-bool Slingshot::IsBirdInFlight()
-{
-	if (birdInFlight)
 	{
 		return true;
 	}
@@ -97,8 +90,8 @@ void Slingshot::Release()
 	{
 		return;
 	}
+
 	dragging = false;
-	birdInFlight = true;
 	b2Vec2 birdPos = loadedBird->GetBody()->GetPosition();
 	b2Vec2 launchVector = anchorPoint - birdPos;
 	launchVector *= launchPower;

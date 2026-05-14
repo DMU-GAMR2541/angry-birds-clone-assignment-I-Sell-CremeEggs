@@ -12,18 +12,38 @@ class ContactListener : public b2ContactListener {
         std::set<uintptr_t> s_ptr;
         std::unordered_map<uintptr_t, Pig*>* pigLookup;
         std::unordered_map<uintptr_t, Structure*>* structLookup;
+        Bird* activeBird = nullptr;
         ContactListener(std::unordered_map<uintptr_t, Pig*>* pigLookup, std::unordered_map<uintptr_t, Structure*>* structLookup)
         {
             this->pigLookup = pigLookup;
             this->structLookup = structLookup;
+        }
+
+        void SetActiveBird(Bird* bird)
+        {
+            activeBird = bird;
         }
     // Called when two fixtures begin to touch
     void BeginContact(b2Contact* contact) override {
         // Get the two fixtures involved
         b2Fixture* fixtureA = contact->GetFixtureA();
         b2Fixture* fixtureB = contact->GetFixtureB();
+
         uintptr_t a = fixtureA->GetBody()->GetUserData().pointer;
         uintptr_t b = fixtureB->GetBody()->GetUserData().pointer;
+
+        bool aIsBird = (a == 100);
+        bool bIsBird = (b == 100);
+        
+        if (aIsBird || bIsBird)
+        {
+            sf::Clock clock;
+            if (activeBird->IsInFlight())
+            {
+                std::cout << "isCollide";
+                activeBird->SetInFlight(false);
+            }
+        }
 
         if ((a == 100 && b > 2) || (b == 100 && a > 2)) 
         {
@@ -67,8 +87,6 @@ class ContactListener : public b2ContactListener {
             s_ptr.insert(fixtureB->GetBody()->GetUserData().pointer);
             std::cout << "Bird has hit the floor";
         }
-
-
     }
     // Called when two fixtures cease to touch
     void EndContact(b2Contact* contact) override {

@@ -17,14 +17,13 @@ private:
 	Bird* loadedBird;
 	b2Vec2 anchorPoint;
 	bool dragging;
-	bool birdInFlight = false;
 	float maxStretch;
 	float launchPower;
 
 public:
 	Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float height, float width);
+	Bird* GetLoadedBird();
 	bool IsBirdLoaded();
-	bool IsBirdInFlight();
 	void LoadBird(Bird* bird);
 	void BeginDrag();
 	void UpdateDrag(sf::Vector2f mousePosition);

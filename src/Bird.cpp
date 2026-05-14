@@ -59,3 +59,13 @@ b2Body* Bird::GetBody()
 {
 	return body;
 }
+
+bool Bird::IsInFlight()
+{
+	return isInFlight;
+}
+
+void Bird::SetInFlight(bool isInFlight)
+{
+	this->isInFlight = isInFlight;
+}
