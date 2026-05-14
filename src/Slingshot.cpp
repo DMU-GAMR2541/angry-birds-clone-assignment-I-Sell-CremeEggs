@@ -6,7 +6,7 @@ Slingshot::Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float 
 	loadedBird = nullptr;
 	dragging = false;
 	maxStretch = 2.0f;
-	launchPower = 8.0f;
+	launchPower = 16.0f;
 
 	bodyDef.type = b2_kinematicBody;
 	bodyDef.position = position;
@@ -22,7 +22,7 @@ Slingshot::Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float 
 	body->CreateFixture(&fixture);
 	body->SetEnabled(false);
 
-	SetSprite("tempText");
+	SetSprite("../assets/ang_birds/slingshot.png");
 
 	sf::Vector2u textureSize = texture.getSize();
 	sprite.setOrigin(textureSize.x / 2.0f, textureSize.y / 2.0f);
@@ -34,6 +34,18 @@ Slingshot::Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float 
 bool Slingshot::IsBirdLoaded()
 {
 	if (loadedBird != nullptr)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+bool Slingshot::IsBirdInFlight()
+{
+	if (birdInFlight)
 	{
 		return true;
 	}
@@ -86,6 +98,7 @@ void Slingshot::Release()
 		return;
 	}
 	dragging = false;
+	birdInFlight = true;
 	b2Vec2 birdPos = loadedBird->GetBody()->GetPosition();
 	b2Vec2 launchVector = anchorPoint - birdPos;
 	launchVector *= launchPower;

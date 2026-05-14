@@ -1,7 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
-#include <queue>
 #include <Pig.h>
 #include <Bird.h>
 #include <Structure.h>
@@ -33,8 +32,9 @@ int main() {
     std::vector<std::unique_ptr<Pig>> pigs;
     std::vector<std::unique_ptr<Bird>> birds;
     std::vector<std::unique_ptr<Structure>> structures;
+    std::unique_ptr<Slingshot> slingshot;
 
-    Slingshot slingshot = Slingshot(world, b2Vec2(225.0f / scale, 500.0f / scale), b2Vec2(225.0f / scale, 450.0f / scale), 300.0f, 150.0f);
+    //Slingshot slingshot = Slingshot(world, b2Vec2(225.0f / scale, 500.0f / scale), b2Vec2(225.0f / scale, 450.0f / scale), 300.0f, 150.0f);
 
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(625.0f/scale, 500.0f/scale), PigType::SmallPig));
     pigs.push_back(std::make_unique<Pig>(world, b2Vec2(500.0f/scale, 560.0f/scale), PigType::MediumPig));
@@ -46,6 +46,8 @@ int main() {
 
     structures.push_back(std::make_unique<Structure>(world, b2Vec2(600.0f/scale, 568.0f/scale), StructureType::WoodBlock));
     structures.push_back(std::make_unique<Structure>(world, b2Vec2(650.0f/scale, 568.0f/scale), StructureType::StoneBlock));
+
+    slingshot = std::make_unique<Slingshot>(world, b2Vec2(225.0f / scale, 500.0f / scale), b2Vec2(225.0f / scale, 450.0f / scale), 300.0f, 150.0f);
     //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::WoodPillar));
     //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::WoodPillar));
     //structures.push_back(std::make_unique<Structure>(world, b2Vec2(4.5f, 10.0f), StructureType::StonePillar));
@@ -63,18 +65,25 @@ int main() {
             }
         }
 
-        if (slingshot.IsBirdLoaded() == false)
+        if (slingshot->IsBirdLoaded() == false && !birds.empty())
         {
-            Bird* nextBird = birds[birdNum].get();
-            birdNum++;
-            slingshot.LoadBird(nextBird);
+            if (slingshot->IsBirdInFlight())
+            {
+
+            }
+            else
+            {
+                Bird* nextBird = birds[birdNum].get();
+                birdNum++;
+                slingshot->LoadBird(nextBird);
+            }
         }
 
         if (event.type == sf::Event::MouseButtonPressed)
         {
             if (event.mouseButton.button == sf::Mouse::Left)
             {
-                slingshot.BeginDrag();
+                slingshot->BeginDrag();
             }
         }
 
@@ -82,7 +91,7 @@ int main() {
         {
             if (event.mouseButton.button == sf::Mouse::Left)
             {
-                slingshot.Release();
+                slingshot->Release();
             }
         }
 
@@ -90,7 +99,7 @@ int main() {
         {
             sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
             sf::Vector2f mouseWorldPos(mousePosition.x, mousePosition.y);
-            slingshot.UpdateDrag(mouseWorldPos);
+            slingshot->UpdateDrag(mouseWorldPos);
         }
 
         float dt = clock.restart().asSeconds();
@@ -110,6 +119,7 @@ int main() {
         {
             structure->Update();
         }
+        slingshot->Update();
 
         window.clear(sf::Color::Cyan);
 
@@ -127,6 +137,7 @@ int main() {
         {
             structure->Render(window);
         }
+        slingshot->Render(window);
         window.display();
     }
     /*
