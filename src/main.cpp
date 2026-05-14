@@ -1,12 +1,16 @@
 #include <SFML/Graphics.hpp>
 #include <box2d/box2d.h>
 #include <iostream>
+#include <queue>
 #include <Pig.h>
 #include <Bird.h>
 #include <Structure.h>
+#include <Slingshot.h>
 
 int main() {
-    int scale = 30.0f;
+    float scale = 30.0f;
+    int birdNum = 0;
+    sf::Clock clock;
     // --- 1. WINDOW SETUP ---
     sf::RenderWindow window(sf::VideoMode(800, 600), "Annoyed_Flocks");
     window.setFramerateLimit(60);
@@ -30,11 +34,15 @@ int main() {
     std::vector<std::unique_ptr<Bird>> birds;
     std::vector<std::unique_ptr<Structure>> structures;
 
-    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(5.0f, 5.0f), PigType::SmallPig));
-    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(14.0f, 6.0f), PigType::MediumPig));
-    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(10.0f, 8.0f), PigType::LargePig));
+    Slingshot slingshot = Slingshot(world, b2Vec2(225.0f / scale, 500.0f / scale), b2Vec2(225.0f / scale, 450.0f / scale), 300.0f, 150.0f);
 
-    birds.push_back(std::make_unique<Bird>(world, b2Vec2(4.5f, 10.0f), BirdType::Red));
+    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(625.0f/scale, 500.0f/scale), PigType::SmallPig));
+    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(500.0f/scale, 560.0f/scale), PigType::MediumPig));
+    pigs.push_back(std::make_unique<Pig>(world, b2Vec2(735.0f/scale, 550.0f/scale), PigType::LargePig));
+
+    birds.push_back(std::make_unique<Bird>(world, b2Vec2(150.0f / scale, 560.0f / scale), BirdType::Red));
+    birds.push_back(std::make_unique<Bird>(world, b2Vec2(100.0f / scale, 560.0f / scale), BirdType::Red));
+    birds.push_back(std::make_unique<Bird>(world, b2Vec2(50.0f / scale, 560.0f / scale), BirdType::Red));
 
     structures.push_back(std::make_unique<Structure>(world, b2Vec2(600.0f/scale, 568.0f/scale), StructureType::WoodBlock));
     structures.push_back(std::make_unique<Structure>(world, b2Vec2(650.0f/scale, 568.0f/scale), StructureType::StoneBlock));
@@ -55,7 +63,38 @@ int main() {
             }
         }
 
-        world.Step(1.0f / 60.0f, 8, 3);
+        if (slingshot.IsBirdLoaded() == false)
+        {
+            Bird* nextBird = birds[birdNum].get();
+            birdNum++;
+            slingshot.LoadBird(nextBird);
+        }
+
+        if (event.type == sf::Event::MouseButtonPressed)
+        {
+            if (event.mouseButton.button == sf::Mouse::Left)
+            {
+                slingshot.BeginDrag();
+            }
+        }
+
+        if (event.type == sf::Event::MouseButtonReleased)
+        {
+            if (event.mouseButton.button == sf::Mouse::Left)
+            {
+                slingshot.Release();
+            }
+        }
+
+        if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+        {
+            sf::Vector2i mousePosition = sf::Mouse::getPosition(window);
+            sf::Vector2f mouseWorldPos(mousePosition.x, mousePosition.y);
+            slingshot.UpdateDrag(mouseWorldPos);
+        }
+
+        float dt = clock.restart().asSeconds();
+        world.Step(dt, 8, 3);
 
         sf_groundVisual.setPosition(b2_groundBody->GetPosition().x * 30.0f, b2_groundBody->GetPosition().y * 30.0f);
 

@@ -8,4 +8,8 @@ private:
 	BirdType type;
 public:
 	Bird(b2World& world, b2Vec2 position, BirdType type);
+	void SetPosition(b2Vec2& position);
+	void EnablePhysics(bool enabled);
+	void Launch(b2Vec2& impulse);
+	b2Body* GetBody();
 };

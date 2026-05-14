@@ -1,32 +1,31 @@
 #pragma once
 #include <string>
+#include "Bird.h"
 
-/// <summary>
-/// A simple class that you can use to begin the testing process using Googletest.
-/// </summary>
-class Slingshot {
+class Slingshot : public DynamicObject
+{
 private:
-    /// <summary>
-    /// Variables that define the slingshot.
-    /// </summary>
-    int i_tension;
-    std::string str_birdType;
-    const int MAX_TENSION = 100;
+	enum class State
+	{
+		Idle,
+		Loaded,
+		Dragging,
+		Fired
+	};
+
+	State state;
+	Bird* loadedBird;
+	b2Vec2 anchorPoint;
+	bool dragging;
+	float maxStretch;
+	float launchPower;
 
 public:
-    Slingshot() : i_tension(0), str_birdType("Red") {}
+	Slingshot(b2World& world, b2Vec2 position, b2Vec2 anchorPoint, float height, float width);
+	bool IsBirdLoaded();
+	void LoadBird(Bird* bird);
+	void BeginDrag();
+	void UpdateDrag(sf::Vector2f mousePosition);
+	void Release();
 
-    //Functions to test.
-    void loadBird(std::string str_type) { str_birdType = str_type; }
-
-    bool pullBack(int amount) {
-        if (amount < 0) return false;
-        i_tension = (i_tension + amount > MAX_TENSION) ? MAX_TENSION : i_tension + amount;
-        return true;
-    }
-
-    int getTension() const { return i_tension; }
-    std::string getBirdType() const { return str_birdType; }
-
-    void release() { i_tension = 0; }
 };

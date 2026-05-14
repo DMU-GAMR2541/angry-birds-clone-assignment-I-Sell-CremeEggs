@@ -413,6 +413,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Bird.cpp" />
+    <ClCompile Include="..\src\Slingshot.cpp" />
     <ClCompile Include="..\src\Structure.cpp" />
     <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\DynamicObject.cpp" />
     <ClCompile Include="D:\Lab Work\Lab Work Repo Boombaclat\angry-birds-clone-assignment-I-Sell-CremeEggs\src\Pig.cpp" />
