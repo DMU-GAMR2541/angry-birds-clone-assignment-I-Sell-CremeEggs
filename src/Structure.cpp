@@ -36,6 +36,16 @@ void Structure::TakeDamage(float damage)
 	health -= damage;
 	if (health <= 0)
 	{
-		
+		isDestroyed = true;
 	}
+}
+
+b2Body* Structure::GetBody()
+{
+	return body;
+}
+
+bool Structure::IsDestroyed()
+{
+	return isDestroyed;
 }

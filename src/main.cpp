@@ -117,6 +117,32 @@ int main() {
         float dt = clock.restart().asSeconds();
         world.Step(dt, 8, 3);
 
+        for (auto pig = pigs.begin();  pig != pigs.end();)
+        {
+            if ((*pig)->IsDead())
+            {
+                world.DestroyBody((*pig)->GetBody());
+                pig = pigs.erase(pig);
+            }
+            else
+            {
+                pig++;
+            }
+        }
+
+        for (auto structure = structures.begin(); structure != structures.end();)
+        {
+            if ((*structure)->IsDestroyed())
+            {
+                world.DestroyBody((*structure)->GetBody());
+                structure = structures.erase(structure);
+            }
+            else
+            {
+                structure++;
+            }
+        }
+
         sf_groundVisual.setPosition(b2_groundBody->GetPosition().x * 30.0f, b2_groundBody->GetPosition().y * 30.0f);
 
         for (auto& pig : pigs)

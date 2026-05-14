@@ -36,6 +36,16 @@ void Pig::TakeDamage(float damage)
 	health -= damage;
 	if (health <= 0)
 	{
-
+		isDestroyed = true;
 	}
+}
+
+b2Body* Pig::GetBody()
+{
+	return body;
+}
+
+bool Pig::IsDead()
+{
+	return isDestroyed;
 }
